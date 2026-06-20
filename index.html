@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentación Saludable - Curso DPCC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Sección de Introducción */
+        .introduccion {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1542834369-83723f9f3256?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .introduccion h1 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .introduccion p {
+            font-size: 1.2rem;
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        /* Botones de Temas */
+        .temas {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #f8fff9;
+        }
+
+        .temas h2 {
+            color: #2d8659;
+            margin-bottom: 40px;
+        }
+
+        .contenedor-botones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .boton-tema {
+            background-color: #2d8659;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .boton-tema:hover {
+            background-color: #1f5e3e;
+            transform: translateY(-3px);
+        }
+
+        /* Sección de Imágenes de Temas */
+        .seccion-tema {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .seccion-tema.activo {
+            display: block;
+        }
+
+        .seccion-tema img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+
+        /* Sección de Preguntas */
+        .preguntas {
+            padding: 60px 20px;
+            background-color: #e8f5e9;
+        }
+
+        .preguntas h2 {
+            text-align: center;
+            color: #2d8659;
+            margin-bottom: 40px;
+        }
+
+        .contenedor-preguntas {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pregunta {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #2d8659;
+        }
+
+        .pregunta h4 {
+            color: #2d8659;
+            margin-bottom: 8px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #1f5e3e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección de Introducción -->
+    <section class="introduccion">
+        <h1>ALIMENTACIÓN SALUDABLE - CUIDA TU VIDA</h1>
+        <p>
+        La alimentación saludable es fundamental para mantener nuestro cuerpo fuerte, sano y lleno de energía. Los alimentos que consumimos cada día influyen en nuestro crecimiento, rendimiento físico, concentración y bienestar emocional. Por ello, es importante adoptar hábitos alimenticios equilibrados que aporten los nutrientes necesarios para una vida saludable.
+
+        Sin embargo, algunas personas pueden desarrollar trastornos alimenticios, como la anorexia, la bulimia o el trastorno por atracón, que afectan tanto la salud física como la mental. Estos problemas pueden surgir por diversos factores, como la presión social, la baja autoestima o preocupaciones excesivas por la imagen corporal.
+
+        En esta página encontrarás información sobre la importancia de una alimentación saludable, los beneficios de mantener buenos hábitos alimenticios y cómo prevenir trastornos que pueden poner en riesgo nuestra salud y calidad de vida. 🌱💚
+        </p>
+    </section>
+
+    <!-- Botones para acceder a los temas -->
+    <section class="temas">
+        <h2>Explora los Temas</h2>
+        <div class="contenedor-botones">
+            <a href="#tema1" class="boton-tema" onclick="mostrarTema('tema1')">Tema 1: Alimentos Nativos del Perú</a>
+            <a href="#tema2" class="boton-tema" onclick="mostrarTema('tema2')">Tema 2: Alimentación y Trastornos</a>
+            <a href="#tema3" class="boton-tema" onclick="mostrarTema('tema3')">Tema 3: Hábitos Saludables</a>
+        </div>
+    </section>
+
+    <!-- Contenido de cada tema -->
+    <section id="tema1" class="seccion-tema">
+        <h2>Tema 1: Valoremos los alimentos nativos del Perú</h2>
+        <img src="https://i.imgur.com/9Z7X9ZL.png" alt="Infografía Alimentos Nativos del Perú">
+        <p>El Perú cuenta con una gran diversidad de alimentos nativos como la quinua, kiwicha, camu camu, lucuma y castaña, que poseen alto valor nutricional, aportan proteínas, vitaminas y minerales. Estos alimentos son parte fundamental de nuestra identidad cultural y nos ayudan a cuidar nuestra salud y fortalecer nuestras defensas.</p>
+    </section>
+
+    <section id="tema2" class="seccion-tema">
+        <h2>Tema 2: Alimentación Saludable - Anorexia, Bulimia y Vigorexia</h2>
+        <img src="https://i.imgur.com/5kL8aQ9.png" alt="Infografía Alimentación Saludable y Trastornos">
+        <p>Una alimentación adecuada previene enfermedades y mejora nuestro bienestar. Es importante conocer que existen trastornos como la anorexia (miedo a engordar), bulimia (atracones y purgas) y vigorexia (obsesión por la musculatura). Debemos elegir alimentos naturales, evitar excesos de azúcares, grasas y productos procesados para cuidar tanto el cuerpo como la mente.</p>
+    </section>
+
+    <section id="tema3" class="seccion-tema">
+        <h2>Tema 3: Pequeñas decisiones, grandes cambios</h2>
+        <img src="https://i.imgur.com/2sP7bXy.png" alt="Infografía Principios de Alimentación Saludable">
+        <p>Una alimentación saludable se basa en comer variedad de alimentos naturales, equilibrados y en la cantidad adecuada. Esto nos brinda energía, previene enfermedades y mejora nuestro crecimiento. Lo que consumimos hoy construye nuestra salud del mañana; elige bien hoy para tener un mejor futuro.</p>
+    </section>
+
+    <!-- Sección de Preguntas -->
+    <section class="preguntas">
+        <h2>Sección de Preguntas y Reflexión</h2>
+        <div class="contenedor-preguntas">
+            <div class="pregunta">
+                <h4>1. ¿Por qué es importante consumir alimentos nativos de nuestra región?</h4>
+                <p>Porque tienen gran valor nutricional, son parte de nuestra cultura y apoyan la economía local, además de ser beneficiosos para la salud.</p>
+            </div>
+            <div class="pregunta">
+                <h4>2. ¿Qué diferencia existe entre una alimentación equilibrada y los alimentos procesados?</h4>
+                <p>La equilibrada aporta nutrientes reales que el cuerpo necesita, mientras que los procesados suelen tener mucho azúcar, sal y grasas que pueden dañar la salud si se consumen en exceso.</p>
+            </div>
+            <div class="pregunta">
+                <h4>3. ¿Qué acciones puedes realizar para cuidar tu alimentación y evitar trastornos?</h4>
+                <p>Comer variado, beber suficiente agua, hacer actividad física, descansar bien e informarse correctamente sobre la nutrición.</p>
+            </div>
+            <div class="pregunta">
+                <h4>4. ¿De qué manera puedes promover hábitos saludables en tu entorno?</h4>
+                <p>Compartiendo lo aprendido, eligiendo alimentos naturales, evitando comidas chatarras e incentivando a familiares y amigos a cuidar su salud.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Proyecto DPCC - Alimentación Saludable © 2026 | Trabajo escolar</p>
+    </footer>
+
+    <script>
+        function mostrarTema(idTema) {
+            // Ocultar todos los temas
+            document.querySelectorAll('.seccion-tema').forEach(seccion => {
+                seccion.classList.remove('activo');
+            });
+            // Mostrar el tema seleccionado
+            document.getElementById(idTema).classList.add('activo');
+            // Desplazamiento suave
+            document.getElementById(idTema).scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+
+</body>
+</html>
+
