@@ -142,9 +142,7 @@
         <p>
         La alimentación saludable es fundamental para mantener nuestro cuerpo fuerte, sano y lleno de energía. Los alimentos que consumimos cada día influyen en nuestro crecimiento, rendimiento físico, concentración y bienestar emocional. Por ello, es importante adoptar hábitos alimenticios equilibrados que aporten los nutrientes necesarios para una vida saludable.
 
-        Sin embargo, algunas personas pueden desarrollar trastornos alimenticios, como la anorexia, la bulimia o el trastorno por atracón, que afectan tanto la salud física como la mental. Estos problemas pueden surgir por diversos factores, como la presión social, la baja autoestima o preocupaciones excesivas por la imagen corporal.
-
-        En esta página encontrarás información sobre la importancia de una alimentación saludable, los beneficios de mantener buenos hábitos alimenticios y cómo prevenir trastornos que pueden poner en riesgo nuestra salud y calidad de vida. 🌱💚
+        Sin embargo, algunas personas pueden desarrollar trastornos alimenticios, como la anorexia y bulimia, que afectan tanto la salud física como mental. En esta página encontrarás información importante para cuidar tu salud y la de tu familia. 🌱💚
         </p>
     </section>
 
@@ -152,30 +150,28 @@
     <section class="temas">
         <h2>Explora los Temas</h2>
         <div class="contenedor-botones">
-            <a href="#tema1" class="boton-tema" onclick="mostrarTema('tema1')">Tema 1: Alimentos Nativos del Perú</a>
-            <a href="#tema2" class="boton-tema" onclick="mostrarTema('tema2')">Tema 2: Alimentación y Trastornos</a>
-            <a href="#tema3" class="boton-tema" onclick="mostrarTema('tema3')">Tema 3: Hábitos Saludables</a>
+            <button class="boton-tema" onclick="mostrarTema('tema1')">Tema 1: Alimentos Nativos del Perú</button>
+            <button class="boton-tema" onclick="mostrarTema('tema2')">Tema 2: Alimentación y Trastornos</button>
+            <button class="boton-tema" onclick="mostrarTema('tema3')">Tema 3: Hábitos Saludables</button>
         </div>
     </section>
 
     <!-- Contenido de cada tema -->
-    <section id="tema1" class="seccion-tema">
-        <h2>Tema 1: Valoremos los alimentos nativos del Perú</h2> <img src="https://raw.githubusercontent.com/spidernacho33-web/Nutrivida/main/
-" alt="Infografía Alimentos Nativos del Perú">
-        <p>El Perú cuenta con una gran diversidad de alimentos nativos como la quinua, kiwicha, camu camu, lucuma y castaña, que poseen alto valor nutricional, aportan proteínas, vitaminas y minerales. Estos alimentos son parte fundamental de nuestra identidad cultural y nos ayudan a cuidar nuestra salud y fortalecer nuestras defensas.</p>
+    <section id="tema1" class="seccion-tema activo">
+        <h2>Tema 1: Valoremos los alimentos nativos del Perú</h2>
+        <img src="https://raw.githubusercontent.com/spidernacho33-web/Nutrividal/main/tema1.jpg" alt="Infografía Alimentos Nativos del Perú">
+        <p>El Perú cuenta con una gran diversidad de alimentos nativos como la quinua, kiwicha, camu camu, lucuma y castaña, que poseen alto valor nutricional, aportan proteínas, vitaminas y minerales. Estos alimentos son parte fundamental de la identidad cultural y nos ayudan a cuidar nuestra salud y fortalecer nuestras defensas.</p>
     </section>
 
     <section id="tema2" class="seccion-tema">
         <h2>Tema 2: Alimentación Saludable - Anorexia, Bulimia y Vigorexia</h2>
-        <img src="https://raw.githubusercontent.com/TU_USUARIO/Nutrivida/main/tema2.jpg
-" alt="Infografía Alimentación Saludable y Trastornos">
-        <p>Una alimentación adecuada previene enfermedades y mejora nuestro bienestar. Es importante conocer que existen trastornos como la anorexia (miedo a engordar), bulimia (atracones y purgas) y vigorexia (obsesión por la musculatura). Debemos elegir alimentos naturales, evitar excesos de azúcares, grasas y productos procesados para cuidar tanto el cuerpo como la mente.</p>
+        <img src="https://raw.githubusercontent.com/spidernacho33-web/Nutrividal/main/tema2.jpg" alt="Infografía Alimentación Saludable y Trastornos">
+        <p>Una alimentación adecuada previene enfermedades y mejora nuestro bienestar. Es importante conocer que existen trastornos como la anorexia (miedo a engordar), bulimia (atracones y purgas) y vigorexia (obsesión por la forma corporal). Debemos elegir alimentos naturales, evitar excesos de azúcares, grasas y productos procesados para cuidar tanto el cuerpo como la mente.</p>
     </section>
 
     <section id="tema3" class="seccion-tema">
-        <h2>Tema 3: Pequeñas decisiones, grandes cambios</h2>
-        <img src="https://raw.githubusercontent.com/TU_USUARIO/Nutrivida/main/tema3.jpg
-" alt="Infografía Principios de Alimentación Saludable">
+        <h2>Tema 3: Pequeñas decisiones y grandes cambios</h2>
+        <img src="https://raw.githubusercontent.com/spidernacho33-web/Nutrividal/main/tema3.jpg" alt="Infografía Hábitos Saludables">
         <p>Una alimentación saludable se basa en comer variedad de alimentos naturales, equilibrados y en la cantidad adecuada. Esto nos brinda energía, previene enfermedades y mejora nuestro crecimiento. Lo que consumimos hoy construye nuestra salud del mañana; elige bien hoy para tener un mejor futuro.</p>
     </section>
 
@@ -208,17 +204,13 @@
 
     <script>
         function mostrarTema(idTema) {
-            // Ocultar todos los temas
             document.querySelectorAll('.seccion-tema').forEach(seccion => {
                 seccion.classList.remove('activo');
             });
-            // Mostrar el tema seleccionado
             document.getElementById(idTema).classList.add('activo');
-            // Desplazamiento suave
             document.getElementById(idTema).scrollIntoView({behavior: 'smooth'});
         }
     </script>
 
 </body>
 </html>
-
